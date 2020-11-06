@@ -1,4 +1,30 @@
 body
 {
-    inear-gradient(red 0%, orange 25%, yellow 50%, green 75%, blue 100%);
+    background-color: #000;
+    margin:0px;
+    padding: 0px;
+    min-height: 100vw;
+}
+container
+{
+     width:100vw;
+  
+    display: grid;
+    grid-template-rows: 8vh 90vh ;
+}
+header
+{
+    background-color:white;
+}
+main
+{
+background-color:aqua;
+}
+article
+{
+border:1px solid blue;
+}
+footer
+{
+background-color:yellowgreen;
 }
