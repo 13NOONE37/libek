@@ -1,7 +1,8 @@
 var menu_click=0;
 
 function menu()
-{/*
+{
+    alert("if");/*
  if(menu_click==0){
      document.getElementByClassName('square')[0].style['transform'].style['transform']='rotate(45deg)';
       alert("if");
