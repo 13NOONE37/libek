@@ -1,22 +1,30 @@
 :root{
---transition:white;
+--trans:all .5s ease-in-out;
 --yellow:#fca311;
---black:#56565a;
+--yellow2:#bd7600;
+--black:#1c1c1c;
+--blue:#14213D;
+    
 }
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 body
 {
-    background-color: var(--black);
+    background-color: var(--yellow);
     margin:0px;
     padding: 0px;
     min-height: 100vw;
     overflow-x:hidden;
+    font-family: 'Anton', monospace;
+    background-image:linear-gradient(90deg, var(--yellow), var(--yellow2) 80%)
+    
 }
 container
 {
      
     display: grid;
    /* grid-template-rows: 8vh 90vh 30vh 50vh 50vh 8vh;*/
-    grid-template-rows: 75px 1000px 400px 500px 500px 90px;
+    grid-template-rows: 94px 900px 400px 600px 600px 110px;
 }
 header
 {
@@ -26,64 +34,199 @@ header
     left: 0px;
     top:0px;
     z-index:9999;
+    color:var(--black);
 }
 .box
 {
     position: absolute;
     left:10px;
-    width:50px;
-    height:50px;
+    width:69px;
+    height:69px;
     margin-top:25px;
     display:grid;
-    grid-template-columns: repeat(3, 10px);
-    grid-template-rows:repeat(3, 10px);
-    grid-gap:10px;
+    grid-template-columns: repeat(3, 13px);
+    grid-template-rows:repeat(3, 13px);
+    grid-gap:15px;
     
 }
 .square
 {
-    background-color:var(--transition); 
+    background-color:var(--blue); 
     transition:.3s ease-in-out;
-    transform: rotate(0deg);
-    box-shadow: 4px 4px 12px;
+    
+    border:1px solid #fff;
+}
+.box:hover .square
+{
+    /*docelowo na kliknięcie*/
+    transform: rotate(45deg);
 }
 main
 {
-
 display:grid;
 grid-template-columns: 3.5fr 6.5fr;
-    overflow: hidden;
+overflow: hidden;
+text-align:center;
+
 }
 .info
 {
-   width:0px;
-    height: 0px;
+  position: relative;
+    padding-left:30px;
+}
+.info h1
+{ 
+    font-size:3.5em; 
+    text-shadow:4px 4px 3px #fff;
+    margin:60px 0px;
+}
+.info h2
+{
+   margin:60px 0px;
+    text-shadow:2px 2px 3px #fff;
+}
+.info a
+{
+    text-decoration: none;
+    font-size:1.5em;
+}
+a
+{
+    display:inline-block;
+}
+.info a div
+{
+    z-index: 999;
     
-    border-bottom: 400px solid white;
-    border-left:40vw solid transparent;
-    border-top:0px solid transparent;
+    width:280px;
+    height: 65px;
+    border-radius: 5px;
+    text-decoration:none;
+    font-size:1.15em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
+    background-color:var(--yellow);
+    color:var(--black);
+    text-shadow:2px 2px 2px #fff;
+    transition:all .3s linear;
+    box-shadow:-10px -10px 10px rgba(255, 255, 255, 0.2),
+                15px 15px 15px rgba(0, 0, 0, 0.1);
+    
+}
+.info a div:hover
+{
+    transform: scale(.99);
+   box-shadow:
+                inset -10px -10px 10px rgba(255,255,255,0.2),
+                inset 15px 15px 15px rgba(0,0,0,0.2);
+}
+
 
 
 .person
 {
-   
+    position: absolute;
+width:0px;
+height:0px;
+top:0px;
+right:0px;
+border-bottom: 994px solid var(--black);
+border-left:60vw solid transparent;
+border-top:0px solid transparent;
+  
+}
+.person img
+{
+   position: absolute;
+    /*right:370px;370*/
+   right:7vw;
+    padding-left:10px;
+    z-index:-9999;
+    filter:grayscale();
    
 }
-.1_tr
+
+@media only screen and (max-width:546px) {
+    
+    .person
+    {
+       
+       border-left:35vw solid transparent !important; 
+    }
+}
+@media only screen and(max-width:1280px){
+    .person img{
+    
+    }
+}
+@media only screen and (max-width:418px){
+    .information
+    {
+        padding: 5px !important;
+    }
+    .person
+    {
+      display:none;
+    }
+}
+@media only screen and (max-width:344px){
+   container
+{
+    grid-template-rows: 94px 900px 485px 600px 600px 110px;
+}
+}
+@media only screen and (max-width:320px){
+    .info
+    {
+        padding-left:20px;
+    }
+}
+@media only screen and (max-width:280px){
+    .info
+    {
+        padding-left:0px;
+    }
+}
+
+.information
+{
+background-color:var(--black);
+color:#fff;
+padding:35px;
+text-shadow:2px 2px 2px #000;
+}
+.information h1
+{
+    font-size:2.5em;
+    color:var(--yellow);
+}
+.information p:before
+{
+  
+}
+.information p
+{
+    transform:translate(0px);
+    font-size:1.2em;
+    position: absolute;
+}
+
+
+.books
 {
     
 }
-
-
-
-
-
-
-article
+.heros
 {
-
+   background-color:var(--black); 
 }
 footer
 {
-
+    text-align: center;
+    text-shadow:2px 2px 2px #fff;
+}
+footer div a
+{
+    margin-top:30px;
 }
