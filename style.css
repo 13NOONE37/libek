@@ -23,7 +23,6 @@ container
 {
      
     display: grid;
-   /* grid-template-rows: 8vh 90vh 30vh 50vh 50vh 8vh;*/
     grid-template-rows: 94px 900px 400px 600px 600px 110px;
 }
 header
@@ -77,8 +76,8 @@ text-align:center;
 .info h1
 { 
     font-size:3.5em; 
-    color:#fff;
-    text-shadow:4px 4px 2px var(--black);
+    color:var(--black);
+    text-shadow:4px 4px 2px #fff;
     margin:60px 0px;
 }
 .info h2
@@ -127,7 +126,7 @@ a
 
 .person
 {
-    position: absolute;
+position: absolute;
 width:0px;
 height:0px;
 top:0px;
@@ -141,11 +140,100 @@ border-top:0px solid transparent;
 {
    position: absolute;
     /*right:370px;370*/
-   right:-25px;
+    top:50px;
+   right:380px;
     padding-left:10px;
     z-index:-9999;
     filter:grayscale(.8)
    
+}
+
+.information
+{
+background-color:var(--black);
+color:#fff;
+padding:35px;
+text-shadow:2px 2px 2px #000;
+}
+.information h1
+{
+    font-size:2.6em;
+    color:var(--yellow);
+}
+.info  img{
+   margin-bottom:-40px;
+}
+.information p
+{
+    transform:translate(0px);
+    font-size:1.2em;
+    position: absolute;
+}
+
+/*books*/
+
+
+.books
+{
+ display:grid;
+grid-template-columns:2fr 20fr 2fr;
+}
+.left-arrow
+{
+   margin:auto auto;
+}
+.right-arrow
+{
+    margin:auto auto;
+}
+.box_books
+{
+   margin:auto auto;
+    display:flex;
+    flex-wrap:wrap;   
+}
+
+.heros
+{
+   background-color:var(--black); 
+   display:grid;
+   grid-template-columns:2fr 20fr 2fr;
+    
+}
+
+footer
+{
+    text-align: center;
+    text-shadow:2px 2px 2px #fff;
+}
+footer div a
+{
+    margin-top:30px;
+}
+
+@media only screen and (max-width:1200px){
+    .person img
+    {
+      right:160px;
+    }
+}
+@media only screen and (max-width:940px){
+    .person img
+    {
+      right:20px;
+    }
+}
+@media only screen and (max-width:1015px){
+    .side
+    {
+        display:none;
+    }
+}
+@media only screen and (max-width:760px){
+    .person img
+    {
+      display:none;
+    }
 }
 
 @media only screen and (max-width:546px) {
@@ -154,11 +242,6 @@ border-top:0px solid transparent;
     {
        
        border-left:35vw solid transparent !important; 
-    }
-}
-@media only screen and(max-width:1280px){
-    .person img{
-    
     }
 }
 @media only screen and (max-width:418px){
@@ -171,10 +254,14 @@ border-top:0px solid transparent;
       display:none;
     }
 }
-@media only screen and (max-width:344px){
+@media only screen and (max-width:354px){
    container
 {
     grid-template-rows: 94px 900px 485px 600px 600px 110px;
+}
+    .information h1{
+    font-size:2em;
+    
 }
 }
 @media only screen and (max-width:320px){
@@ -182,52 +269,15 @@ border-top:0px solid transparent;
     {
         padding-left:20px;
     }
+    .box_books img
+{
+    transform:scale(.8);
+}
 }
 @media only screen and (max-width:280px){
     .info
     {
         padding-left:0px;
     }
-}
-
-.information
-{
-background-color:var(--black);
-color:#fff;
-padding:35px;
-text-shadow:2px 2px 2px #000;
-}
-.information h1
-{
-    font-size:2.5em;
-    color:var(--yellow);
-}
-.information p:before
-{
-  
-}
-.information p
-{
-    transform:translate(0px);
-    font-size:1.2em;
-    position: absolute;
-}
-
-
-.books
-{
     
-}
-.heros
-{
-   background-color:var(--black); 
-}
-footer
-{
-    text-align: center;
-    text-shadow:2px 2px 2px #fff;
-}
-footer div a
-{
-    margin-top:30px;
 }
