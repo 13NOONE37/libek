@@ -1,0 +1,8 @@
+Po kliknieciu na dana postac zmieni sie zawartosc przy uzyciu js. podczas zmieniania w body dodawane jest ( filter:blur(20px) opacity(.6);) a odrgrywana jest krotka animacja ladowania jakies kwadraty podskakujacce do gory czy coś albo waga przechylająca się raz w jedną drugą raz w drugą.
+po wykonaniu animacji scrool na samą góre.'
+
+
+Ewentualnie dodac na postaciach border gradientowy ruszany jak w igora stronie (starej)
+
+
+dodac sociale na gorze strony

@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="utf-8"/>
-    <title>Libertarianism</title>
+    <title>Murray</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css"/>
@@ -10,20 +10,7 @@
     </head>
     <body>
 <container>
-        <header>
-            <!-- dodac chowajace się menu. po zjechaniu troszeczke wsuwa sie w lewo i wystaje tylko troszke a po najechaniu w okolice wysuwa sie-->
-            <div class="box" onclick="menu()">
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                </div>
-    </header>
+        
     
         <main>
             
@@ -44,44 +31,65 @@
     </main>
     
         <article class="information">
-      <h1>What is <br/>Libertarianism?</h1>
-            <p>Libertarianism is the group of political philosophies that advocates minimizing coercion and emphasizes freedom, liberty, and voluntary association. Libertarians generally advocate a society with significantly less government compared to most present day societies.</p>
+      <h1>Who is Murray Rothbard?</h1>
+            <p>Murray Newton Rothbard andAmerican economist of the Austrian School, economic historian and political theorist. Rothbard was the founder and leading theoretician of anarcho-capitalism, a staunch advocate of historical revisionism and a central figure in the 20th-century American libertarian movement. He wrote over twenty books on political theory, revisionist history, economics, and other subjects.</p>
     </article>
     
         <article class="books">
-            <div class="left-arrow"><img src="left-arrow.png" width="40px"/></div>
+            <div class="left-arrow" onclick="main(1)"><img src="left-arrow.png" width="40px"/></div>
             
             <div class="box_books">
                 
-                <div class="book side"><a href="#"><img alt="book" src="book1.jpg" width="200px" height="300"/></a><caption></caption></div>
+                <div class="book side" id="1"><a href="#"><img alt="book" src="book2.jfif" height="250px"/><img class="buy" src="buy.png"/></a></div>
             
-                <div class="book main"><a href="#"><img alt="book" src="book2.jfif" width="300px" height="400"/></a><caption></caption></div>
+                <div class="book main" id="2"><a href="#"><img alt="book" src="book2.jfif" height="250px"/><img class="buy" src="buy.png"/><h1>Conceived in liberty</h1></a></div>
             
-                <div class="book side"><a href="#"><img alt="book" src="book3.jpg" width="200px" height="300"/></a><caption></caption></div>
-            
+                <div class="book side" id="3"><a href="#"><img alt="book" src="book3.jpg" height="250px"/><img class="buy" src="buy.png"/></a></div>
+                
             </div>
             
-            <div class="right-arrow"><img src="right-arrow.png" width="40px"/></div>
+            <div class="right-arrow"  onclick="main(2)"><img src="right-arrow.png" width="40px"/></div>
     </article>
     
         <article class="heros">
-            
-            <div class="left-arrow"><img src="left-arrow.png" width="40px"/></div>
-
+            <h1>Other Great People</h1>
                 <div class="box_heros">
                     
-                    <div class="hero"></div>
-
-                    <div class="hero"></div>
-
-                    <div class="hero"></div>
-
+                    <div class="hero">
+                        <img src="MurrayBW.png"/>
+                        <div class="rectangle"></div>
+                        <span>Click to get more information</span>
+                    </div>
+                    
+                      <div class="hero">
+                        <img src="MurrayBW.png"/>
+                        <div class="rectangle"></div>
+                        <span>Click to get more information</span>
+                    </div>
+                    
+                      <div class="hero">
+                        <img src="MurrayBW.png"/>
+                        <div class="rectangle"></div>
+                        <span>Click to get more information</span>
+                    </div>
+                    
+                      <div class="hero">
+                        <img src="MurrayBW.png"/>
+                        <div class="rectangle"></div>
+                        <span>Click to get more information</span>
+                    </div>
+                    
+                      <div class="hero">
+                        <img src="MurrayBW.png"/>
+                        <div class="rectangle"></div>
+                        <span>Click to get more information</span>
+                    </div>
+                   
+                    
                 </div>
-
-                <div class="right-arrow"><img src="right-arrow.png" width="40px"/></div>
-            
+         
     </article>
-    
+   
         <footer>
             <div>
             <a href="#" title="Some website"><img src="balance.png" width="45px"/></a>

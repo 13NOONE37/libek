@@ -1,29 +1,16 @@
-var menu_click=0;
-
-function menu()
+function main(var value)
 {
-    alert("if");/*
- if(menu_click==0){
-     document.getElementByClassName('square')[0].style['transform'].style['transform']='rotate(45deg)';
-      alert("if");
-     for(var i=0; i<7; i++)
-         {  
-         document.getElementByClassName('square')[i].style['rotate']='45deg';
-         }
-     menu_click++;
- } 
-    if(menu_click==1){
-      alert("elseif");
-     for(var i=0; i<7; i++)
-         {
-         document.getElementByClassName('square')[i].style['transform']='rotate(0deg)';
-         }
-     menu_click++;
- }
-    if(menu_click==2){
-        menu_click++;
-}*/
+   alert(value);
+    var e1 = document.getElemntById('1');
+    var e2 = document.getElemntById('2');
+    var e3 = document.getElemntById('3');
+    
+    if(value==1){
+        alert('left');
+        /*e3.style['grid-area'] = '1';
+        document.getgetElemntById('1')[0].style['opacity'] = '0';*/
+    } else if(value==2) {
+        alert('right');
+    }
+    
 }
-
-
-
