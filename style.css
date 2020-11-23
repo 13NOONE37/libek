@@ -441,8 +441,12 @@ container
 }
 .heros img
 {
-    /*width:150px;*/
+    width:150px;
 }
+    .heros
+    {
+        font-size:.8em;
+    }
 .book
 {
        transform: scale(1);
