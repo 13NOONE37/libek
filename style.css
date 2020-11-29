@@ -4,7 +4,7 @@
 --yellow2:#bd7600;
 --black:#1c1c1c;
 --blue:#14213D;
-    
+--time:3s;
 }
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
@@ -27,15 +27,15 @@ container
 }
 main
 {
-display:grid;
-grid-template-columns: 3.5fr 6.5fr;
-overflow: hidden;
-text-align:center;
+    display:grid;
+    grid-template-columns: 3.5fr 6.5fr;
+    overflow: hidden;
+    text-align:center;
 
 }
 .info
 {
-  position: relative;
+    position: relative;
     padding-top: 100px;
     padding-left:30px;
 }
@@ -46,15 +46,19 @@ text-align:center;
     text-shadow:4px 4px 2px #fff;
     margin:60px 0px;
 }
+
 .info h2
 {
-   margin:60px 0px;
+    margin:60px 0px;
     text-shadow:2px 2px 3px #fff;
+    animation:show 4s cubic-bezier(1,-0.5,.83,.67);
 }
+
 .info a
 {
     text-decoration: none;
     font-size:1.5em;
+    animation:show 4s cubic-bezier(1,-0.5,.83,.67);
 }
 a
 {
@@ -63,7 +67,6 @@ a
 .info a div
 {
     z-index: 999;
-    
     width:280px;
     height: 65px;
     border-radius: 5px;
@@ -78,7 +81,7 @@ a
     transition:all .3s linear;
     box-shadow:-10px -10px 10px rgba(255, 255, 255, 0.2),
                 15px 15px 15px rgba(0, 0, 0, 0.1);
-    
+    animation:show 4s cubic-bezier(1,-0.5,.83,.67);
     
 }
 .info a div:hover
@@ -103,7 +106,6 @@ right:0px;
 border-bottom: 994px solid var(--black);
 border-left:60vw solid transparent;
 border-top:0px solid transparent;
-  
 }
 
 .person img
@@ -114,8 +116,8 @@ border-top:0px solid transparent;
    right:380px;
     padding-left:10px;
     z-index:-9999;
-    filter:grayscale(.8)
-   
+    filter:grayscale(.8);
+    animation:show 1.8s linear;
 }
 
 .information
@@ -147,42 +149,14 @@ z-index: 999;
 .books
 {
     display:grid;
-    grid-template-columns:1.5fr 20fr 1.5fr;
+    grid-template-columns:1fr;
 }
 
-.left-arrow
-{
-    display: flex;
-}
-.right-arrow
-{
-    display: flex;  
-}
-.left-arrow img
-{
-    margin:auto auto;
-}
-.right-arrow img
-{
-    margin:auto auto;
-}
 .box_books
 {
     display:flex;
     flex-wrap:wrap;  
     margin:auto auto;
-}
-.buy
-{
-    width:80px;
-    opacity:0;
-   
-    transition:var(--trans);
-    position: absolute;
-    left:48px;
-    top:125px;
-   
-    
 }
 .book
 {
@@ -196,27 +170,12 @@ z-index: 999;
 {
     order:1;
 }
-.book h1
-{
-    text-align: center;
-    font-size:.9em;
-    color:var(--black);
-    text-shadow:2px 2px 2px #fff;
-    
-}
-.book a
-{
-    text-decoration: none;
-}
-.book:hover
-{
 
-}
-.book:hover .buy
+@keyframes show
 {
-    opacity:1;
+    from{opacity:0;}
+    to{opacity:1;}
 }
-
 @keyframes main_to_left
 {
     from{transform:translateX(0px) scale(1.5); }
@@ -246,6 +205,10 @@ z-index: 999;
 {
     from{transform:translateX(0px)}
     to{transform:translateX(460px)}
+}
+.main_to_left
+{
+    animation:main_to_left var(--time);
 }
 .main
 {
