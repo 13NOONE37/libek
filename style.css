@@ -98,6 +98,11 @@ a
     transition:var(--trans);
     outline: none;
 }
+.text::placeholder{
+    color:#fff;
+    opacity:.8;
+    
+}
 .text:focus
 {
     border-bottom: 3px solid var(--black); 
@@ -206,7 +211,7 @@ z-index: 999;
         display:flex;
         flex-direction: row;  
         margin:auto auto;
-        animation: slider 24s linear alternate infinite; 
+        animation: slider 26s linear alternate infinite; 
    
 }
 .box_books:hover
@@ -233,8 +238,8 @@ z-index: 999;
 
 @keyframes slider
 {
-    from{transform:translateX(-50vw);}
-    to{transform: translateX(50vw);}
+    from{transform:translateX(-30vw);}
+    to{transform: translateX(5vw);}
 }
 @keyframes show
 {
